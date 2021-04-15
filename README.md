@@ -32,10 +32,15 @@ When your source code has a fixed format, you are committed to the following
 dimensions:
 
 `Columns: 1-8 Label
+
   9-9 Blank
+  
   10-15 Operation code (or Assembler directive)
+  
   16-16 Blank
+  
   17-35 Operand
+  
   36-66 Comment`
   
 If your project does not have a GUI, then you should specify all the arguments well
@@ -43,6 +48,7 @@ to the command prompt as follow (Assuming executable version stored on the C
 partition):
 
   `C:\> pass1 cource_file.asm intmdte_file.mdt`
+  
   `C:\> pass2 intmdte_file.mdt output_file.obj`
   
 Your assembler can stop execution if there are errors in Pass 1, and should indicate
